@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Update page</title>
+<script language="jscript">
+var m,n;
+function verifyItem()
+{
+m=document.myform.item.value;
+if(m=="")
+alert("enter item");
+}
+function verifyCost()
+{
+n=document.myform.cost.value;
+if(n=="")
+alert("enter cost");
+}
+</script>
+</head>
+<body style="background-image:url(LIB/image/peach.png);
+position:relative;
+background-repeat:repeat;
+background-position:center;">
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<center><h1 style='font-family:"Courier New", Courier, monospace;'><caption>UPDATING THE ITEMS</caption></h1></center>
+<br><br>
+<form name="myform" method="post" action="update.com">
+<center>
+<table border="0" border="0" width="35%" height="15%" align="center"
+style='font-family:"Courier New", Courier, monospace; font-size:150%'>
+<tr>
+<td>ITEM NAME:</td>
+<td><input type="text" name="item" value="" size="30" >
+</tr>
+<tr>
+<td>COST OF THE ITEM:</td>
+<td><input type="text" name="cost" value="" size="30" OnClick="verifyItem()">
+</tr>
+<tr>
+<td>AVAILABLE :</td>
+<td><input type="text" name="available" value="" size="30"></td>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td rowspan="2">
+<td><input type="submit" value="UPDATNG MENU" style="height:50px; width:150px; font-size:10pt; color:black;
+background-color:cyan; border:5px solid 336600; padding:7px;"></td>
+</tr>
+</table>
+</font>
+</center>
+</form>
+</body>
+</html>

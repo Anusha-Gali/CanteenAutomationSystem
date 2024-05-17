@@ -1,0 +1,101 @@
+<html>
+  <head>
+       <script>
+          function VerifyDetails(){
+                
+                NAME=document.signupform.Name.value;
+                UID=document.signupform.uid.value;
+                EMAIL=document.signupform.email.value;
+                SIGNUPUSERNAME=document.signupform.signupusername.value;
+                SIGNUPPWD=document.signupform.signuppwd.value;
+                RE-SIGNUPPWD=document.signupform.re-signuppwd.value;
+                MOBILENO=document.signupform.mobileno.value;
+                if(NAME=="" || UID=="" || EMAIL==""|| SIGNUPUSERNAME=="" || SIGNUPPWD=="" || RE-SIGNUPPWD=="" || MOBILENO=="")
+                alert("enter all the details");}
+       </script>
+    </head>
+<body style="background-image:url(LIB/image/peach.png);
+position:relative;
+background-repeat:repeat;
+background-position:center;">
+  
+    <center><h1 style='font-family:"Courier New", Courier, monospace;'><caption>REGISTRATION FORM</caption></h1></center> 
+  <center><br><br>
+  <form action="register.com" method=post>
+        <table border="0">
+            <tr>
+                <td>NAME :</td>
+                <td><input type="text" size="30" name="Name"></td>
+            </tr>
+            <tr>
+               <td>USER ID :</td>
+               <td><input type="text" size="30" name="uid"></td>
+            </tr>
+            <tr>
+                <td>BRANCH :</td>
+                <td>
+                   <select name="branch">
+                          <option value="none">NONE</option>
+                          <option value="cse">CSE</option>
+                          <option value="ece">ECE</option>
+                          <option value="eee">EEE</option>
+                          <option value="it">IT</option>
+                          <option value="civil">CIVIL</option>
+                          <option value="mech">MECH</option>
+                   </select>
+                 </td>
+             </tr>
+             <!--<tr>
+                 <td>Section</td>
+                 <td>
+                    <select>
+                            <option value="none">NONE</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                            <option value="e">E</option>
+                            <option value="f">F</option>
+                     </select>
+                  </td>
+                  <td>If faculty(select department)</td>
+                  <td>
+                    <select>
+                            <option value="none">NONE</option>
+                            <option value="cse">CSE</option>
+                            <option value="ece">ECE</option>
+                            <option value="eee">EEE</option>
+                            <option value="it">IT</option>
+                            <option value="civil">CIVIL</option>
+                            <option value="mech">MECH</option>
+                     </select>
+                  </td>
+               </tr>-->
+               <tr>
+                  <td>EMAIL</td>
+                  <td><input type="text" size="30" name="email"></td>
+               </tr>
+               <tr>
+                  <td>USERNAME : </td>
+                  <td><input type="text" size="30" name="signupusername"></td>
+               </tr>
+               <tr>
+                  <td>PASSWORD :</td>
+                  <td><input type="password" size="30" name="signuppwd"></td>
+               <tr>
+                  <td>RE-ENTER THE PASSWORD :</td>
+                  <td><input type="password" size="30" name="re-signuppwd"></td>
+               </tr>
+               <tr> 
+                  <td>MOBILE NUMBER:</td>
+                  <td><input type="text" size="30" name="mobileno"></td>
+               </tr>
+               <tr>
+                <td></td>
+                  <td><input type="submit" name="register" value="REGISTER" style="height:50px; width:150px; font-size:10pt; color:black;
+background-color:cyan; border:5px solid 336600; padding:7px;" OnClick="VerifyDetails()"></td>
+               </tr>
+        </table>
+    </form>
+  </center>                          
+</html>
